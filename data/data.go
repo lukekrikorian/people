@@ -114,8 +114,7 @@ func BeingUsed(ID string) bool {
 
 func init() {
 	path, _ := os.Getwd()
-	fmt.Println(path)
-	file, err = os.OpenFile("people.json", os.O_RDWR|os.O_CREATE, 0644)
+	file, err = os.OpenFile(path+"/people.json", os.O_RDWR|os.O_CREATE, 0644)
 	if err != nil {
 		fmt.Println("Couldn't find people.json file")
 		os.Exit(1)
