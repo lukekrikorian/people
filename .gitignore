@@ -1,0 +1,8 @@
+*.swp
+*.dot
+*.json
+*.html
+*.pdf
+*.svg
+people
+.DS_Store
